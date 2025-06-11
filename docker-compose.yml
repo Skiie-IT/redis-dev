@@ -1,5 +1,5 @@
 services:
-  redis-dev:
+  redis:
     container_name: redis-dev
     image: redis:7.4-alpine
     restart: always
