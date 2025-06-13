@@ -5,7 +5,7 @@ services:
     restart: always
     ports:
       - '6379:6379'
-    command: redis-server --save 20 1 --loglevel warning --requirepass aa
+    command: redis-stack-server --save 20 1 --loglevel warning --requirepass aa
     volumes: 
       - redis-dev:/data
 volumes:
