@@ -1,7 +1,7 @@
 services:
   redis:
     container_name: redis-dev
-    image: redis:7.4-alpine
+    image: redis/redis-stack:7.4.0-v5
     restart: always
     ports:
       - '6379:6379'
@@ -10,3 +10,5 @@ services:
       - redis-dev:/data
 volumes:
   redis-dev:
+
+  
